@@ -1,0 +1,37 @@
+/* Styles for the body */
+body {
+    background-image: url('images/theme.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for the announcement table */
+.announcement-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+}
+
+.announcement-table th, .announcement-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.announcement-table th {
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+.announcement-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.announcement-table tr:hover {
+    background-color: #ddd;
+}
