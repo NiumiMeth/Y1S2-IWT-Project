@@ -1,0 +1,433 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #110e0e;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Header Styles */
+.nav {
+    font-family: calibri;
+    display: flex;
+    padding: 15px 30px;
+    overflow: hidden;
+    background-color: #65ADF5;
+    justify-content: space-between;
+    height: 70px;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    opacity: 0.8;
+    letter-spacing: 1px;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+.nav ul a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav li {
+    float: left;
+    margin: 0 2px;
+}
+
+.icon {
+    padding: 15px;
+    font-size: 38px;
+    font-weight: 800;
+    cursor: pointer;
+    color: white;
+    margin-right: -100px;
+    margin-left: -20px;
+}
+
+li a:hover, .active {
+    background-color: #08396A;
+    border-radius: 20px;
+}
+
+/* Authentication Button Styles */
+#login, #logout {
+    background-color: #3232b8a3;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 7px 7px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.325);
+}
+
+#login {
+    margin-left: 100px;
+}
+
+/* Introduction Section Styles */
+.intro {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    box-shadow: #110e0e;
+}
+
+
+/* Library Information Styles */
+.library-info {
+    background-color: #c6c2c269;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.library-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.library {
+    background-color: #f9f9f9;
+    border-left: 5px solid #4fb898;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.325);
+}
+
+.library h3, .library p {
+    color: #333;
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+.library a, .library a:hover {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.library a:hover {
+    text-decoration: underline;
+}
+
+/*ask librarian*/
+.form-container {
+    background-color: white;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.471);
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/*#reset {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  
+}*/
+
+/* Form Styles */
+fieldset {
+    border-radius: 20px;
+    padding: 0px;
+    border-width: 10px;
+    width: 1000px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 400px;
+    height: 40px;
+    background-color: rgba(101, 96, 96, 0.585);
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 5px;
+    box-sizing: border-box; /* Makes padding not affect width */
+}
+
+/* Seating Plan Styles */
+.seating-plan h2, .row, .seat {
+    margin-top: 20px;
+}
+
+.seat {
+    background-color: #4CAF50; /* Green */
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    margin: 2px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.seat.selected {
+    background-color: #e7665d; /* Red */
+}
+
+/* Button Styles */
+.bttn1, .bttn2, #reset {
+    background-color: #badb34;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+}
+
+
+
+.bttn1:hover, .bttn2:hover, #reset:hover {
+    background-color: #2980B9;
+}
+
+/* Dropdown Styling */
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #18131300;
+    border-radius: 20px;
+    box-sizing: border-box; /* Makes padding not affect width */
+    display: block;
+    outline: none; /* Removes the default focus outline */
+    background-color: #4CAF50;
+}
+
+/* Footer Styles */
+.footer{
+	font-family: calibri;
+	padding:0px 30px;
+	width: 100%;
+	background-color: #65ADF5;
+	display: flex;
+	margin-left:0;
+	overflow:hidden;
+	height:190px;
+	opacity:0.9;
+}
+.footer div{
+
+	letter-spacing: 1px;
+	
+}
+.col-1{
+	width: 100%;
+	margin-left: -35px;
+}
+.col-1 a{
+	width: 20%;
+	min-width:20%;
+	display: block;
+	text-decoration: none;
+	color: black;
+	background-color: white;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	padding: 10px 0px;
+	text-align: center;
+	margin-bottom: 2%;
+	letter-spacing: 0;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+.row-1{
+	margin-bottom: 4%;
+	margin-left: 40px;
+}
+.row-2{
+
+	width: 100%;
+	padding: 20px 20px;
+	background-color: #89F9D1;
+	height: 30px;
+	margin-top: 54px;
+	overflow: hidden;
+}
+.col-2{
+	
+	flex-grow: 2;
+	width: 105%;
+	display: block;
+	background-color: #89F9D1;
+	height: 190px;
+	margin-top: 12px;
+	overflow: hidden;
+}
+
+.fa{
+ 
+  padding: 7.5px;
+  font-size: 15px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-left: 0%;
+  margin-right: 2%;
+  margin-top: 15px;
+  overflow:hidden;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  margin-left: 500px;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.qr-code{
+	width: 90px;
+	height: 90px;
+	margin-bottom: 32px;
+	margin-left:75%;
+	overflow:hidden;
+}
+.imgarea{
+	display: block;
+	width: 100%;
+	background-color: #65ADF5;
+	overflow: hidden;
+}
+/* Style for the container holding the seats */
+.seat-selection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 300px;
+    margin: auto;
+}
+
+/* Custom styling for each radio button */
+input[type="radio"] {
+    display: none; /* Hide the default radio button */
+}
+
+/* Custom styling for labels (seats) */
+label {
+    display: block;
+    padding: 10px;
+    background-color: #ddd;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Style when mouse hovers over the label */
+label:hover {
+    background-color: #ccc;
+    transform: translateY(-2px);
+}
+
+/* Style for the selected radio button */
+input[type="radio"]:checked + label {
+    background-color: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .footer-container {
+        text-align: center;
+    }
+
+    .footer-social-icons a img {
+        width: 35px; /* Smaller icons for mobile */
+    }
+
+    .footer-links a {
+        display: inline; /* Stack the links vertically on smaller screens */
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header ul {
+        display: block; 
+    }
+
+    header li {
+        display: block;
+    }
+}
